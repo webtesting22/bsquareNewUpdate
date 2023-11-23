@@ -256,12 +256,12 @@ p {
 
 /* ------------------------------workspace section End ---------------------*/
 
-#back {
+/* #back {
   background-image: url("./images/back-designs.jpg");
   width: 100%;
   background-attachment: fixed;
   background-size: cover;
-}
+} */
 
 #Workspce_cards .workspace_card {
   border-top: 5px solid #0072a7;
