@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSQUARE - Navrangpura</title>
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<style>
+    #header {
+        width: 100%;
+        height: 100vh;
+    }
+
+    #header .carousel {
+        height: 100%;
+    }
+
+    #header .carousel-inner {
+        height: 100%;
+    }
+
+    #header .carousel-item {
+        height: 100%;
+    }
+
+    #header .title {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+    }
+
+    #header h1 span {
+        font-size: 2rem;
+        line-height: 50px;
+        background-color: rgba(210, 210, 210, 0.344);
+        padding: 6px 10px;
+        border: 2px solid #0087c4;
+    }
+
+
+    #header .animated {
+        animation-duration: 1.3s;
+        animation-delay: .5s;
+    }
+
+
+    #header img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+
+
+
+    @media (max-width:800px) {}
+
+    @media (max-width:600px) {}
+
+    #gallery img,
+    #gallery video {
+
+        width: 100%;
+        height: auto;
+        /* margin: 4% auto; */
+
+        cursor: pointer;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+
+
+
+
+
+    #location {
+
+        padding: 20px 0;
+    }
+
+    #location button {
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: rgb(36, 36, 36);
+        color: white;
+        width: 100%;
+        transition: .4s;
+    }
+
+    #location button:hover {
+        background-color: #0087c4;
+        transition: .4s;
+    }
+
+    .popup img {
+        max-width: 400px
+    }
+
+    .footer-widget-heading .col-xl-6 button {
+        background-color: #0086c451;
+        border: none;
+        padding: 10px 12px;
+        width: 150px;
+        font-size: 12px;
+        font-weight: bold;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        transition: .4s;
+    }
+
+    .footer-widget-heading .col-xl-6 button:hover {
+        background-color: #0086c451;
+        border: none;
+        padding: 10px 12px;
+        width: 150px;
+        font-size: 12px;
+        font-weight: bold;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+        transition: .4s;
+    }
+
+    .footer-widget-heading .modal .modal-dialog {
+        max-width: 800px;
+    }
+
+    .footer-widget-heading .modal .modal-header {
+        border: none;
+
+    }
+
+    .modal-footer button {
+        background-color: #0086c4;
+        color: white;
+        border: none;
+        padding: 10px 12px;
+        width: 150px;
+        font-size: 12px;
+        font-weight: bold;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        transition: .4s;
+    }
+
+    .modal-footer button:hover {
+        background-color: #0086c4c4;
+        border: none;
+        padding: 10px 12px;
+        width: 150px;
+        font-size: 12px;
+        font-weight: bold;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+        transition: .4s;
+    }
+
+    .socials a {
+        margin: 0px 8px;
+        background-color: #0086c4;
+        border-radius: 3px;
+        color: white;
+        text-decoration: none;
+        padding: 5px 20px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        transition: .4s;
+    }
+
+    .socials a:hover {
+        margin: 0px 8px;
+        background-color: #0086c4;
+        border-radius: 3px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        padding: 5px 20px;
+        transition: .4s;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-fixed-top py-0" aria-label="Offcanvas navbar large">
+        <div class="container-fluid" id="nav_container">
+            <div class="container main_nav_container justify-content-center">
+                <div class="d-flex flex-row justify-content-between inner_div">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../images/BSquare logo without bg.png" alt="Bsquare"></a>
+                    <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                        <span class="bi bi-list "></span>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-end text-bg-light m-auto" tabindex="-1" id="offcanvasNavbar2"
+                    aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbar2Label"><img src="../images/logo2.png" alt="">
+                        </h5>
+                        <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown2" role="button"
+                                    aria-haspopup="true" aria-expanded="false" type="button" data-bs-toggle="dropdown">
+                                    Locations
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                    <a class="dropdown-item" href="./prahladnagar.html">Prahlad Nagar Corporate Road</a>
+                                    <a class="dropdown-item" href="./s.g.road.html">S.G.Road</a>
+                                    <a class="dropdown-item" href="./IIMAroad.html">IIM A Road</a>
+                                    <a class="dropdown-item" href="./navrangpura.html">Navrangpura</a>
+                                    <a class="dropdown-item" href="./sindhubhawan.html">Sindhu Bhawan</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../Workspace.html">Workspace</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Facilities.html">Amenities</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../AboutUs.html">About&nbsp;Us</a>
+                            </li>
+                            <li class="nav-item" style="display: flex; align-items: center;">
+                                <a class="nav-link" href="tel:+91 9925122772">+91&nbsp;9925122772</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="header">
+        <div id="carouselExampleControls" class="carousel slide pc" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/backposters/29 (1).png" class="d-block w-100" alt="...">
+                    <div class="title">
+                        <h1 class="animated slideInDown"><span>Navrangpura</span></h1>
+                        <h2 class="animated slideInLeft mt-3 p-2" style="font-size: 17px;"><span>The Rise of Coworking
+                                Spaces</span></h2>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="carouselExampleControls" class="carousel slide d-md-block d-lg-none" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/backposters/mobiles banner/5.png" class="d-block w-100" alt="...">
+                    <div class="title">
+                        <h1 class="animated slideInDown"><span>Navrangpura</span></h1>
+                        <h2 class="animated slideInLeft"></h2>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="section_padding"></div>
+        <div class="container">
+            <h2 class="heading_style">Navrangpura <br>
+            </h2>
+            <hr class="hr m-auto">
+
+        </div>
+
+        <br><br>
+        <div class="row mb-5" id="location">
+            <div class="col-xl-6 col-md-12 ">
+                <h4 class="heading_style"><span>Navrangpura</span> BSQUARE Coworking Space</h4>
+                <p>6th Floor – 7th Floor, Shree Krishna Centre, Nr.Mithakali Six Road, Above Crossword, Near Jain
+                    Derasar, Navrangpura, Ahmedabad – 380 009, Gujarat, INDIA.</p>
+                <div class="d-flex justify-content-around"><span class="bi bi-envelope-fill">&nbsp;&nbsp; <a
+                            href="mailto:info@bsquarebc.com"
+                            class="text-black text-decoration-none">info@bsquarebc.com</a></span>
+                    <span class="bi bi-telephone-fill">&nbsp;&nbsp; <a href="tel:+91 9925 122 772"
+                            class="text-black text-decoration-none">+91 9925 122 772</a></span>
+                </div> <br>
+                <a href="tel:+91 9925 122 772"><button class="">Check
+                        Avaibility</button></a><br><br><br>
+                <div class="d-flex justify-content-around text-center">
+                    <div><span class="bi bi-airplane-fill text-dark p-3 rounded rounded-3"
+                            style="border: 1px solid rgb(0, 0, 0);"></span><br><br>
+                        <p>Airport <br>11.7 Km</p>
+                    </div>
+                    <div><span class="bi bi-train-freight-front-fill text-dark p-3 rounded rounded-3"
+                            style="border: 1px solid rgb(0, 0, 0);"></span><br><br>
+                        <p>Railway <br>5.0Km</p>
+                    </div>
+                    <div><span class="bi bi-train-front-fill text-dark p-3 rounded rounded-3"
+                            style="border: 1px solid rgb(0, 0, 0);"></span><br><br>
+                        <p>Nearby <br> Metro <br>-</p>
+                    </div>
+                    <div><span class="bi bi-bus-front-fill text-dark p-3 rounded rounded-3"
+                            style="border: 1px solid rgb(0, 0, 0);"></span><br><br>
+                        <p>BRTS<br>-</p>
+                    </div>
+                    <div><span class="bi bi-hospital-fill text-dark p-3 rounded rounded-3"
+                            style="border: 1px solid rgb(0, 0, 0);"></span><br><br>
+                        <p>Hospital<br>-</p>
+                    </div>
+                    <div><span class="bi bi-buildings-fill text-dark p-3 rounded rounded-3"
+                            style="border: 1px solid rgb(0, 0, 0);"></span><br><br>
+                        <p>Hotel <br>1km</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xl-6 col-md-12">
+                <div class="container iframe">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.759467468402!2d72.5031214!3d23.032602250000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b474dda2b5b%3A0xa31400dea793f4f!2sCOLONNADE-2%2C%20Bodakdev%2C%20Ahmedabad%2C%20Gujarat%20380054%2C%20India!5e0!3m2!1sen!2suk!4v1698748764981!5m2!1sen!2suk"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="gallery" class="container-fluid">
+                <div class="popup">
+                    <img src="./location4/01.webp" class="img-responsive" alt="Navrangpura_img">
+                    <img src="./location4/02.webp" class="img-responsive" alt="Navrangpura_img">
+                    <img src="./location4/03.webp" class="img-responsive" alt="Navrangpura_img">
+                    <img src="./location4/04.webp" class="img-responsive" alt="Navrangpura_img">
+                </div>
+                <div class="showover">
+                    <div class="overlay"></div>
+                    <div class="img-show"><span>X</span><img src=""></div>
+                </div>
+
+            </div>
+
+        </div>
+        <br><br>
+        <a id="button"></a>
+
+    </div>
+    <a href="https://wa.me/9925122772?text=Hello!%0A%0AThis is [Your Name].%0AI'd like to inquire about [Your Inquiry] for Navrangpura.%0A%0APlease respond."
+        class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    <footer class="footer-section">
+        <div class="container">
+
+            <div class="footer-content pt-3">
+                <div class="row m-auto justify-content-center">
+                    <div class="col-xl-3 col-lg-3 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="../images/logo.JPG" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>BSQUARE is a coworking space in Ahmedabad that provides world class workspaces,
+                                    coworking spaces and virtual office spaces at cost-effective rates. We offer well
+                                    furnished, well-equipped managed office spaces to MNCs, entrepreneurs and companies.
+                                </p>
+                            </div>
+
+
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 mb-5">
+
+
+                        <div class="footer-widget-heading carousal_button">
+                            <h3>Blogs</h3>
+                            <div id="carouselExampleIntervalone" class="carousel slide first_btn"
+                                data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="10000">
+                                        <img src="./images/teamwork.jpg" class="d-block w-100" alt="...">
+                                        <br>
+                                        <a href="bsquareblog.html?content=link4">Read More</a>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <img src="./images/01.jpg" class="d-block w-100" alt="...">
+                                        <br>
+                                        <a href="bsquareblog.html?content=link1">Read More</a>
+                                        <br> <br>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <img src="./location1/9-9.jpg" class="d-block w-100" alt="...">
+                                        <br>
+                                        <a href="bsquareblog.html?content=link2">Read More</a>
+                                        <br> <br>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <img src="../images/office day.jpg" class="d-block w-100" alt="...">
+                                        <br>
+                                        <a href="bsquareblog.html?content=link3">Read More</a>
+                                        <br> <br>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIntervalone" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIntervalone" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                                <br>
+                            </div>
+                            
+
+                        </div>
+
+
+                        <div class="footer-widget-heading">
+                            <img src="../images/map2.png" width="100%" alt="">
+                        </div>
+
+
+                    </div>
+                    <div class=" col-lg-3 col-md-3">
+                        <div class="footer-widget-heading igarrow">
+                            <h3>Instagram Posts</h3>
+                            <div id="carouselExampleIntervaltwo" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="50000">
+                                        <a href="https://instagram.com/bsquarecoworks?igshid=MzRlODBiNWFlZA=="
+                                            target="_blank">
+                                            <video src="../images/reels/reel1.mp4" autoplay width="100%"></video>
+                                        </a>
+
+
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="50000">
+                                        <a href="https://instagram.com/bsquarecoworks?igshid=MzRlODBiNWFlZA=="
+                                            target="_blank">
+                                            <video src="../images/reels/reel2.mp4" autoplay width="100%"></video>
+                                        </a>
+
+
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="50000">
+                                        <a href="https://instagram.com/bsquarecoworks?igshid=MzRlODBiNWFlZA=="
+                                            target="_blank"> <video src="../images/reels/reel3.mp4" autoplay
+                                                width="100%"></video></a>
+
+
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIntervaltwo" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIntervaltwo" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                                <br>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul class="p-0">
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="../Blogs.html">Blogs</a></li>
+
+                                <li><a href="../Facilities.html">Facilities</a></li>
+                                <li><a href="../Careers.html">Careers</a></li>
+
+                                <li><a href="../Gallery.html">Gallery</a></li>
+                                <li><a href="../FAQ.html">FAQ</a></li>
+                                <li><a href="../AboutUs.html">About Us</a></li>
+                                <li class="mb-5">&nbsp;</li>
+
+                            </ul>
+                        </div>
+
+                        <div class="footer-social-icon mb-3 ">
+                            <span>Follow us</span>
+                            <a href="https://www.facebook.com/bsquarebc" target="_blank"><i
+                                    class="bi bi-meta facebook-bg"></i></a>
+                            <a href="https://www.linkedin.com/company/bsquarebusinesscenter/" target="_blank"><i
+                                    class="bi bi-linkedin linkdin-bg"></i></a>
+                            <a href="https://instagram.com/bsquarecoworks?igshid=MzRlODBiNWFlZA==" target="_blank"><i
+                                    class="bi bi-instagram instagram-bg"></i></a>
+                        </div>
+                        <a href="mailto:info@bsquarebc.com" target="_blank"
+                            class="bi bi-envelope-fill text-white text-decoration-none mt-5">
+                            info@bsquarebc.com
+                        </a>
+                        <br><br><br>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 text-center">
+                        <div class="copyright-text">
+                            <p class="pt-4">©2023 <a href="#">BSQUARE.</a> All rights reserved
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
+    <script>
+        var btn = $('#button');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+        }
+        const $dropdown = $(".dropdown");
+        const $dropdownToggle = $(".dropdown-toggle");
+        const $dropdownMenu = $(".dropdown-menu");
+        const showClass = "show";
+
+        $(window).on("load resize", function () {
+            if (this.matchMedia("(min-width: 768px)").matches) {
+                $dropdown.hover(
+                    function () {
+                        const $this = $(this);
+                        $this.addClass(showClass);
+                        $this.find($dropdownToggle).attr("aria-expanded", "true");
+                        $this.find($dropdownMenu).addClass(showClass);
+                    },
+                    function () {
+                        const $this = $(this);
+                        $this.removeClass(showClass);
+                        $this.find($dropdownToggle).attr("aria-expanded", "false");
+                        $this.find($dropdownMenu).removeClass(showClass);
+                    }
+                );
+            } else {
+                $dropdown.off("mouseenter mouseleave");
+            }
+        });
+    </script>
+</body>
+
+</html>

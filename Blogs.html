@@ -64,7 +64,7 @@
     }
 
 
-    .Blogs .col-xl-6 button {
+    .Blogs .col-xl-6 a {
         background-color: #0086c451;
         border: none;
         padding: 10px 12px;
@@ -73,9 +73,11 @@
         font-weight: bold;
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
         transition: .4s;
+        text-decoration: none;
+        /* margin-bottom: 2rem; */
     }
 
-    .Blogs .col-xl-6 button:hover {
+    .Blogs .col-xl-6 a:hover {
         background-color: #0086c451;
         border: none;
         padding: 10px 12px;
@@ -147,7 +149,7 @@
             <div class="container main_nav_container justify-content-center">
                 <div class="d-flex flex-row justify-content-between inner_div">
                     <a class="navbar-brand" href="index.html">
-                        <img src="./images/BSquare logo without bg.png" alt="Bsquare" ></a>
+                        <img src="./images/BSquare logo without bg.png" alt="Bsquare"></a>
                     <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
                         <span class="bi bi-list "></span>
@@ -156,27 +158,26 @@
                 <div class="offcanvas offcanvas-end text-bg-light m-auto" tabindex="-1" id="offcanvasNavbar2"
                     aria-labelledby="offcanvasNavbar2Label">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbar2Label"><img src="./images/logo2.png"
-                                alt="">
+                        <h5 class="offcanvas-title" id="offcanvasNavbar2Label"><img src="./images/logo2.png" alt="">
                         </h5>
                         <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            
+
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown2" role="button"
                                     aria-haspopup="true" aria-expanded="false" type="button" data-bs-toggle="dropdown">
                                     Locations
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                    <a class="dropdown-item" href="./ourlocations/location1.html">Prahlad Nagar Corporate Road</a>
-                                    <a class="dropdown-item" href="./ourlocations/location2.html">S.G.Road</a>
+                                    <a class="dropdown-item" href="./prahladnagar.html">Prahlad Nagar Corporate Road</a>
+                                    <a class="dropdown-item" href="./s.g.road.html">S.G.Road</a>
 
-                                    <a class="dropdown-item" href="./ourlocations/location3.html">IIM A Road</a>
-                                    <a class="dropdown-item" href="./ourlocations/location4.html">Navrangpura</a>
-                                    <a class="dropdown-item" href="./ourlocations/location5.html">Sindhu Bhawan</a>
+                                    <a class="dropdown-item" href="./IIMAroad.html">IIM A Road</a>
+                                    <a class="dropdown-item" href="./navrangpura.html">Navrangpura</a>
+                                    <a class="dropdown-item" href="./sindhubhawan.html">Sindhu Bhawan</a>
                                 </div>
                             </li>
                             <li class="nav-item">
@@ -192,7 +193,10 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="AboutUs.html">About&nbsp;Us</a>
                             </li>
-                           
+                            <li class="nav-item" style="display: flex; align-items: center;">
+                                <a class="nav-link" href="tel:+91 9925122772">+91&nbsp;9925122772</a>
+                            </li>
+
                         </ul>
 
                     </div>
@@ -210,9 +214,9 @@
                         <h2 class="animated slideInLeft"></h2>
                     </div>
                 </div>
-               
+
             </div>
-           
+
         </div>
     </div>
     <section class="Blogs">
@@ -224,7 +228,7 @@
                 <p class="text-center mt-2">Articles on innovations, experiences, entrepreneurship and much
                     much more!</p>
             </div>
-            
+
             <div class="row pt-5">
                 <div class="col-xl-6 col-md-12">
                     <div class="m-auto">
@@ -235,129 +239,32 @@
                 </div>
                 <div class="col-xl-6 col-md-12">
 
-                    <div>
+                    <div >
                         <span class="bi bi-buildings-fill" style="color: #0086c4;"> BSQUARE</span> <br><br>
                         <h4>5 Reasons Why Flexible Office Spaces and Co-Working Spaces are The Next Big Thing</h4>
                         <p>Flexible office spaces and co-working spaces are a rage in all the big and small cities.
                             There are a lot of reasons for the same. Managing a huge office space ...
                         </p> <br><br>
-                       
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Read
-                            More</button>
+
+                        <a href="bsquareblog.html?content=link4">Read More</a>
                     </div>
                 </div>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-scrollable ">
-                        <div class="modal-content">
-                            <div class="modal-header text-center justify-content-center "
-                                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; background-color: #0086c4;">
-                                <h1 class="modal-title fs-5 text-center fw-bold text-white" id="exampleModalLabel">5
-                                    Reasons Why
-                                    Flexible Office
-                                    Spaces and Co-Working Spaces are The Next Big Thing</h1>
-                               
-                            </div>
-                            <div class="modal-body">
-                                <img src="./images/teamwork.jpg" width="100%" alt="">
-                                <br><br>
-                                <span class="bi bi-calendar-check-fill"> April 12, 2019</span>
-                                <br><br>
-                                <p>Flexible office spaces and co-working spaces are a rage in all the big and small
-                                    cities. There are a lot of reasons for the same. Managing a huge office space
-                                    becomes tiring as you have to look after a lot of things. This distracts you from
-                                    your goal and has an adverse effect on your productivity as well.
-                                    <br><br>
 
-                                    <b>Here are 5 reasons why flexible office spaces and co-working spaces are much
-                                        better
-                                        than opting for your usual offices.</b>
-                                    <br><br>
-                                    1. Fully serviced and manageable offices spaces
-                                    When you rent a normal office space, you have to take care of everything. From
-                                    electricity, staff, pantry, furniture, Wi-Fi, water and many more miscellaneous
-                                    expenditures and this makes it difficult for you to concentrate on your own work.
-                                    The advantage of being a part of co-working and flexible office spaces that you
-                                    don’t have to worry about these things. There is a whole team involved in managing
-                                    these things.
-                                    <br><br>
-                                    <b> The office space is also fully-furnished and well-equipped with all the
-                                        necessary
-                                        amenities.</b>
-                                    <br><br>
-                                    2. Provision of staff members for office work, pantry, hygiene, reception etc.
-                                    At a normal office, you are responsible for hiring and handling the staff members
-                                    required for different jobs like office work, pantry, cleaning, technicians and
-                                    reception but at a co-working spaces or flexible office spaces, these things are
-                                    handled by the team of that particular coworking space. This way, you don’t have to
-                                    bother about anything. You just have to focus on your work.
-                                    <br><br>
-                                    3. Flexible rent/lease options
-                                    At a co-working space, the biggest benefit of it all is that you don’t have to
-                                    bother with fixed contracts or lease options. Your company can grow as per your need
-                                    and requirements. You could start with a desk and have a huge office space when you
-                                    go through a change. You can book an office space for a day, week or months and this
-                                    cost-effective flexibility is what helps you grow without worrying about the
-                                    monetary aspect.
-                                    <br><br>
-                                    4. Meeting like-minded people and collaborating with the best
-                                    The biggest advantage of being in a co-working space is that you get to meet a lot
-                                    of like-minded people from different backgrounds and fields of work. You also get to
-                                    collaborate with them and be part of events that are innovative and impressive. Who
-                                    knows, you might meet your future team through a co-working space and that might
-                                    make a huge difference in your career.
-                                    <br><br>
-                                    5. Flexible booking of meeting rooms for conferences, training and workshops etc.
-                                    Now conducting meetings, conferences, workshops, training sessions and other
-                                    interactive events has become super easy because of such office spaces. You can rent
-                                    these spaces very easily and they are well-equipped with all facilities and
-                                    amenities required for the completion of such events.
-                                    <br><br>
-                                    <b>Conclusion:</b>
-                                    <br>
-                                    In the fast-paced age of technology and advancements, it is extremely important for
-                                    us to be updated and resonant with the on-going trends and practices. People don’t
-                                    like to be bound by unnecessary hassles. One of the reasons of co-working spaces
-                                    being a huge hit is the fact that these are cost-effective and easy to deal with.
-                                    This makes a huge difference when it comes to attracting the right kind of audience.
-                                    <br><br>
-                                    If you are looking for such a place in Ahmedabad then you should surely check out
-                                    <span style="color: #0086c4;font-weight: 600;">BSQUARE</span> Coworking Space. It
-                                    has a lot of options like Private Offices, Co-working
-                                    Spaces, Meeting Spaces for start-ups, corporate companies, MNCs, freelancers and
-                                    many more.
-                                </p>
-                                <div class="socials m-auto text-center mt-5">
-                                    <a href="" class="bi bi-meta"></a>
-                                    <a href="" class="bi bi-whatsapp"></a>
-                                    <a href="" class="bi bi-bi bi-linkedin"></a>
-                                    <a href="" class="bi bi-twitter"></a>
-
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" data-bs-dismiss="modal">Close</button>
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <hr style="border-top: 1px solid #000;">
             <div class="row pt-5">
 
                 <div class="col-xl-6 col-md-12">
 
-                    <div>
+                    <div style="margin-bottom: 2rem;">
                         <span class="bi bi-buildings-fill" style="color: #0086c4;"> BSQUARE</span> <br><br>
                         <h4>All You Need to Know About BSQUARE Coworking Space</h4>
                         <p>Choosing the right kind of office space is key to making sure you have a successful
                             career and get to focus on your productivity and nothing else. But this can ...
 
                         </p> <br><br>
-                        
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModaltwo">Read
-                            More</button> <br><br>
+
+                        <a href="bsquareblog.html?content=link1">Read More</a>
                     </div>
                 </div>
                 <div class="col-xl-6 col-md-12">
@@ -367,120 +274,13 @@
                             width="100%" alt=""><br><br>
                     </div>
                 </div>
-                <div class="modal fade" id="exampleModaltwo" tabindex="-1" aria-labelledby="exampleModaltwoLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-scrollable ">
-                        <div class="modal-content">
-                            <div class="modal-header text-center justify-content-center "
-                                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; background-color: #0086c4;">
-                                <h1 class="modal-title fs-5 text-center fw-bold text-white" id="exampleModaltwoLabel">
-                                    All You Need to Know About BSQUARE Coworking Space</h1>
-                        
-                            </div>
-                            <div class="modal-body">
-                                <img src="./images/01.jpg" width="100%" alt="">
-                                <br><br>
-                                <span class="bi bi-calendar-check-fill"> November 21, 2018</span>
-                                <br><br>
-                                <p>Choosing the right kind of office space is key to making sure you have a successful
-                                    career and get to focus on your productivity and nothing else. But this can be a
-                                    task if you have to think about different aspects like management of staff and all
-                                    the utility bills like electricity, Wi-Fi, water supply, pantry, and also managing
-                                    salaries of your staff.
-                                    <br><br>
-                                    Well, worry not! We have a simple and effective solution for such a complicated
-                                    problem. In a bustling city like Ahmedabad, it is rare to find a Coworking Space
-                                    that is well-equipped, well-furnished, flexible, well-managed and cost-effective.
-                                    <span style="color: #0086c4;font-weight: 600;">BSQUARE</span> is one such place.
-                                    <br><br>
-                                    It is all the things mentioned above and much much more. Let us take you through a
-                                    tour of what this place has to offer and how can you make the most of this hub of
-                                    productivity.
-                                    <br><br>
-                                    <b> Private Offices</b>
-                                    <br>
-                                    This office space is perfect for MNCs, IT companies and corporates that need their
-                                    own space. These are fully-furnished, ready-to-use, plug-n-play, managed workspaces.
-                                    You don’t have to worry about managing anything as it has a pantry and cafeteria and
-                                    reception & hospitality services as well.
-                                    <br><br>
-                                    <b> Co-working spaces</b>
-                                    <br>
-                                    These spaces are perfect for those who want to be a part of a vibrant workspace
-                                    shared by other like-minded people. You can rent this place for an hour, day, week
-                                    or more. The flexibility of space, facilities and the cost-effective value makes
-                                    this a perfect space for freelancers, artists, IT individuals and coders.
-                                    <br><br>
-                                    <b>Start-Up spaces</b>
-                                    <br>
-                                    This space is best for young start-up companies and small-sized companies that have
-                                    just started and are low on capital. You can rent a small cubicle in the beginning
-                                    and the place can expand as your business grows. You don’t need to think about
-                                    leases or contracts and the booking can be done easily as well. No over-head
-                                    expenses and a hassle-free solution to your start-up problems.
-                                    <br><br>
-                                    <b> Virtual Space</b>
-                                    <br>
-                                    This place is also good for those who just want to have a virtual presence. A
-                                    dedicated address/phone number will be given to you. You can also get your mail and
-                                    phone calls handled by the able staff. You can change your situation as per your
-                                    needs and shift to a hot desk or cubicle as soon as your company grows.
-                                    <br><br>
-                                    <b>Meeting Space</b>
-                                    <br>
-                                    A lot of times, people are in a dire need of a space where they can conduct
-                                    meetings, seminars, training sessions, workshops and other such events. This place
-                                    is perfect for those who need it on an hourly basis or maybe once a month or as and
-                                    when the need arises. These spaces are fully-equipped for such meetings and
-                                    conferences and you can also get the food arranged.
-                                    <br><br>
-                                    <b> Facilities</b>
-                                    <br>
-                                    Our coworking space is equipped with administrative support, office support,
-                                    reception and concierge services and facilitative support. You wouldn’t have to
-                                    bother about anything except your work. In most of the cases, these over-head
-                                    expenses and management issues make it impossible for you to be a part of a
-                                    constantly growing professional hub but with <span
-                                        style="color: #0086c4;font-weight: 600;">BSQUARE</span>, all these problems
-                                    become
-                                    inconsequential as they will manage by us.
-                                    <br><br>
-                                    <b>Conclusion</b>
-                                    <br>
-                                    The flexibility and customization lend a unique touch to our Coworking Space and
-                                    increase the productivity levels by threefold. Making sure that everybody gains some
-                                    way or the other is the ultimate goal of <span
-                                        style="color: #0086c4; font-weight: 600;">BSQUARE</span> Coworking Space.
-                                    Ahmedabad as a
-                                    city has a lot of potential when it comes to launching huge companies and careers.
-                                    Our coworking space are situated in the heart of the city and equipped with
-                                    state-of-the-art infrastructure.
 
-                                    For more details, please check out our website https://bsquarebc.com/ and do let us
-                                    know if you want us to reach out to you.
-                                </p>
-                                <div class="socials m-auto text-center mt-5">
-                                    <a href="" class="bi bi-meta"></a>
-                                    <a href="" class="bi bi-whatsapp"></a>
-                                    <a href="" class="bi bi-bi bi-linkedin"></a>
-                                    <a href="" class="bi bi-twitter"></a>
-
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-
-                                <button type="button" data-bs-dismiss="modal">Close</button>
-                              
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <hr style="border-top: 1px solid #000;">
             <div class="row pt-5">
                 <div class="col-xl-6 col-md-12">
                     <div class="m-auto">
-                        <img src="./locations/location1/9-9.jpg"
+                        <img src="./location1/9-9.jpg"
                             style="box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.20) !important; margin: auto; border-radius: 19px;"
                             width="100%" alt=""> <br><br>
                     </div>
@@ -493,98 +293,44 @@
                         <p>The world of real estate is undergoing a significant transformation, and at the heart of this
                             change is the booming trend of co-working spaces...
                         </p> <br><br>
-                       
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModalthree">Read
-                            More</button>
+
+                        <a href="bsquareblog.html?content=link2">Read More</a>
                     </div>
                 </div>
-                <div class="modal fade" id="exampleModalthree" tabindex="-1" aria-labelledby="exampleModalthreeLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-scrollable ">
-                        <div class="modal-content">
-                            <div class="modal-header text-center justify-content-center "
-                                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; background-color: #0086c4;">
-                                <h1 class="modal-title fs-5 text-center fw-bold text-white" id="exampleModalLabel">
-                                    The Co-working Revolution: Transforming Real Estate and Redefining Workspaces</h1>
-                               
-                            </div>
-                            <div class="modal-body">
-                                <img src="./ourlocations/location1/9-9.jpg" width="100%" alt="">
-                                <br><br>
-                                <span class="bi bi-calendar-check-fill"> April 12, 2019</span>
-                                <br><br>
-                                <p>The world of real estate is undergoing a significant transformation, and at the heart
-                                    of this change is the booming trend of co-working spaces. Co-working is no longer
-                                    just a buzzword; it's a powerful force reshaping the way we think about office
-                                    spaces, property investments, and the future of work. During the first quarter of
-                                    2023, the co-working segment’s share saw a 27 percent increase to 2.18 million
-                                    square feet across the top seven cities, according to ANAROCK. In this blog post,
-                                    we'll delve into the co-working trend in real estate and explore how it's
-                                    revolutionizing the industry.
-                                    <br><br>
-                                    <b>The Rise of Co-working in Real Estate </b>
-                                    <br>
-                                    Co-working spaces have become a prominent trend in the real estate sector, and for
-                                    good reason. This innovative approach to workspace design offers a range of benefits
-                                    for both property owners and tenants, making it a win-win scenario for all involved.
-                                    Among the top seven cities, Bengaluru and NCR together accounted for 66 percent
-                                    (around 1.43 million sq. ft) of net coworking absorption in Q1 2023. While Pune and
-                                    Chennai together stood at around 0.52 million sq. ft of coworking space in the same
-                                    period.
-                                    Co-working spaces offer numerous benefits, including cost-efficiency by sharing
-                                    overhead expenses, flexibility with short-term leases, and access to premium
-                                    amenities like high-speed internet and meeting rooms. They foster a collaborative
-                                    environment, encouraging networking and the exchange of ideas among diverse
-                                    professionals. Prime locations enhance accessibility and business image, while the
-                                    community aspect reduces isolation for remote workers. Overall, co-working spaces
-                                    provide a dynamic and adaptable workspace solution that suits the needs of modern
-                                    professionals and businesses.
-                                    <br><br>
-                                    <b>Co-working as a Future-Proof Real Estate Investment</b>
-                                    <br>
-                                    The co-working trend in real estate isn't merely a short-lived fad; it's a
-                                    fundamental shift in how we approach work and property investments. As remote work
-                                    and flexible schedules become increasingly prevalent, the demand for co-working
-                                    spaces is expected to grow. This makes co-working properties a future-proof
-                                    investment that can adapt to the changing market
-                                    <br><br>
-                                    <b>Conclusion: Coworking's Enduring Impact</b>
-                                    <br>
-                                    Co-working spaces are no longer just a trend; they are a dynamic and transformative
-                                    force in the world of real estate with the prominent players in the market like
-                                    <span
-                                        style="color: #0086c4; font-weight: 600;">BSQUARE</span>, WeWork, DevX Cowork, IndiQube, 91SpringBoard, ABL Workspaces, Workafella,
-                                    The Address, Smart Work, Regus, Awfis, Opulence, Karma Workspace, and Innov8.
-                                    Property owners, co-working operators, and tenants all stand to benefit from the
-                                    co-working revolution. As the lines between work and lifestyle continue to blur,
-                                    co-working spaces are becoming the preferred choice for a diverse range of
-                                    professionals and businesses. Embracing this trend can lead to prosperous real
-                                    estate investments and thriving workspaces that cater to the evolving needs of the
-                                    workforce.
 
-                                </p>
-                                <div class="socials m-auto text-center mt-5">
-                                    <a href="" class="bi bi-meta"></a>
-                                    <a href="" class="bi bi-whatsapp"></a>
-                                    <a href="" class="bi bi-bi bi-linkedin"></a>
-                                    <a href="" class="bi bi-twitter"></a>
+            </div>
+            <hr style="border-top: 1px solid #000;">
+            <div class="row pt-5">
 
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" data-bs-dismiss="modal">Close</button>
-                             
-                            </div>
-                        </div>
+                <div class="col-xl-6 col-md-12">
+
+                    <div style="margin-bottom: 2rem;">
+                        <span class="bi bi-buildings-fill" style="color: #0086c4;"> BSQUARE</span> <br><br>
+                        <h4>Flexi Office Solutions: The Strategic Gamble Driving Big Revenue Boosts</h4>
+                        <p>In the ever-evolving landscape of work environments, Flexi Office Companies are making a
+                            strategic bet that's not just about providing office space but ...
+                        </p> <br><br>
+
+                        <a href="bsquareblog.html?content=link3">Read More</a>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-md-12">
+                    <div class="m-auto">
+                        <img src="images/office day.jpg"
+                            style="box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.20) !important; margin: auto; border-radius: 19px;"
+                            width="100%" alt=""> <br><br>
                     </div>
                 </div>
             </div>
+
         </div>
         </div>
         <div class="section_padding"></div>
         <a id="button"></a>
     </section>
-    <a href="https://wa.me/9925122772?text=Hello!%0A%0AThis is [Your Name].%0AI'd like to inquire about [Your Inquiry].%0A%0APlease respond." class="float" target="_blank">
+    <a href="https://wa.me/9925122772?text=Hello!%0A%0AThis is [Your Name].%0AI'd like to inquire about [Your Inquiry].%0A%0APlease respond."
+        class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
     </a>
     <footer class="footer-section">
@@ -595,8 +341,7 @@
                     <div class="col-xl-3 col-lg-3 mb-50">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="index.html"><img src="./images/logo.JPG" class="img-fluid"
-                                        alt="logo"></a>
+                                <a href="index.html"><img src="./images/logo.JPG" class="img-fluid" alt="logo"></a>
                             </div>
                             <div class="footer-text">
                                 <p>BSQUARE is a coworking space in Ahmedabad that provides world class workspaces,
@@ -604,12 +349,12 @@
                                     furnished, well-equipped managed office spaces to MNCs, entrepreneurs and companies.
                                 </p>
                             </div>
-                            
+
 
                             <br><br>
                         </div>
                     </div>
-                    
+
                     <div class="col-xl-3 col-lg-3 col-md-3 mb-5">
 
 
@@ -621,21 +366,24 @@
                                     <div class="carousel-item active" data-bs-interval="10000">
                                         <img src="./images/teamwork.jpg" class="d-block w-100" alt="...">
                                         <br>
-                                        <button data-bs-toggle="modal" data-bs-target="#exampleModal">Read
-                                            More</button><br> <br>
+                                        <a href="bsquareblog.html?content=link4">Read More</a>
                                     </div>
                                     <div class="carousel-item" data-bs-interval="2000">
                                         <img src="./images/01.jpg" class="d-block w-100" alt="...">
                                         <br>
-                                        <button data-bs-toggle="modal" data-bs-target="#exampleModaltwo">Read
-                                            More</button>
+                                        <a href="bsquareblog.html?content=link1">Read More</a>
                                         <br> <br>
                                     </div>
                                     <div class="carousel-item" data-bs-interval="2000">
-                                        <img src="./ourlocations/location1/9-9.jpg" class="d-block w-100" alt="...">
+                                        <img src="./location1/9-9.jpg" class="d-block w-100" alt="...">
                                         <br>
-                                        <button data-bs-toggle="modal" data-bs-target="#exampleModalthree">Read
-                                            More</button>
+                                        <a href="bsquareblog.html?content=link2">Read More</a>
+                                        <br> <br>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <img src="../images/office day.jpg" class="d-block w-100" alt="...">
+                                        <br>
+                                        <a href="bsquareblog.html?content=link3">Read More</a>
                                         <br> <br>
                                     </div>
                                 </div>
@@ -650,9 +398,8 @@
                                     <span class="visually-hidden">Next</span>
                                 </button>
                                 <br>
-
                             </div>
-                            
+
 
                         </div>
 
@@ -671,8 +418,7 @@
                                     <div class="carousel-item active" data-bs-interval="50000">
                                         <a href="https://instagram.com/bsquarecoworks?igshid=MzRlODBiNWFlZA=="
                                             target="_blank">
-                                            <video src="./images/reels/reel1.mp4" autoplay
-                                                width="100%"></video>
+                                            <video src="./images/reels/reel1.mp4" autoplay width="100%"></video>
                                         </a>
 
 
@@ -680,16 +426,15 @@
                                     <div class="carousel-item" data-bs-interval="50000">
                                         <a href="https://instagram.com/bsquarecoworks?igshid=MzRlODBiNWFlZA=="
                                             target="_blank">
-                                            <video src="./images/reels/reel2.mp4" autoplay
-                                                width="100%"></video>
+                                            <video src="./images/reels/reel2.mp4" autoplay width="100%"></video>
                                         </a>
 
 
                                     </div>
                                     <div class="carousel-item" data-bs-interval="50000">
                                         <a href="https://instagram.com/bsquarecoworks?igshid=MzRlODBiNWFlZA=="
-                                            target="_blank"> <video src="./images/reels/reel3.mp4"
-                                                autoplay width="100%"></video></a>
+                                            target="_blank"> <video src="./images/reels/reel3.mp4" autoplay
+                                                width="100%"></video></a>
 
 
                                     </div>
@@ -717,7 +462,7 @@
                             </div>
                             <ul class="p-0">
                                 <li><a href="./index.html">Home</a></li>
-                                <li><a href="./Blogs.html" >Blogs</a></li>
+                                <li><a href="./Blogs.html">Blogs</a></li>
 
                                 <li><a href="./Facilities.html">Facilities</a></li>
                                 <li><a href="./Careers.html">Careers</a></li>
@@ -729,22 +474,22 @@
 
                             </ul>
                         </div>
-                     
+
                         <div class="footer-social-icon mb-3 ">
                             <span>Follow us</span>
                             <a href="https://www.facebook.com/bsquarebc" target="_blank"><i
                                     class="bi bi-meta facebook-bg"></i></a>
                             <a href="https://www.linkedin.com/company/bsquarebusinesscenter/" target="_blank"><i
                                     class="bi bi-linkedin linkdin-bg"></i></a>
-                            <a href="https://instagram.com/bsquarecoworks?igshid=MzRlODBiNWFlZA=="
-                                target="_blank"><i class="bi bi-instagram instagram-bg"></i></a>
+                            <a href="https://instagram.com/bsquarecoworks?igshid=MzRlODBiNWFlZA==" target="_blank"><i
+                                    class="bi bi-instagram instagram-bg"></i></a>
                         </div>
                         <a href="mailto:info@bsquarebc.com" target="_blank"
                             class="bi bi-envelope-fill text-white text-decoration-none mt-5">
                             info@bsquarebc.com
                         </a>
                         <br><br><br>
-                        
+
                     </div>
 
                 </div>

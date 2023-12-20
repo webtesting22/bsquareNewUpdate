@@ -622,7 +622,12 @@ p {
   width: 50px;
   background: #ff5e14;
 }
-
+.carousal_button .carousel-item a{
+  color: white;
+  background-color: #0072a7;
+  padding: 5px 10px;
+  text-decoration: none;
+}
 .footer-widget ul li {
   display: inline-block;
   float: left;
@@ -907,7 +912,7 @@ ul {
       rgba(0, 0, 0, 0.573) 51%,
       rgba(1, 1, 1, 0.377) 100%
     ),
-    url("./ourlocations/location1/9-9.jpg");
+    url("./location1/9-9.jpg");
   background-size: cover;
   background-position: top left;
 }
@@ -948,7 +953,7 @@ ul {
       rgba(0, 0, 0, 0.573) 51%,
       rgba(1, 1, 1, 0.377) 100%
     ),
-    url("./ourlocations/location2/03.webp");
+    url("./location2/03.webp");
   background-size: cover;
   background-position: top left;
 }
@@ -972,7 +977,7 @@ ul {
       rgba(0, 0, 0, 0.573) 51%,
       rgba(1, 1, 1, 0.377) 100%
     ),
-    url("./ourlocations/location4/01.webp");
+    url("./location4/01.webp");
   background-size: cover;
   background-position: top left;
 }
@@ -984,7 +989,7 @@ ul {
       rgba(0, 0, 0, 0.573) 51%,
       rgba(1, 1, 1, 0.377) 100%
     ),
-    url("./ourlocations/location5/16.jpg");
+    url("./location5/16.jpg");
   background-size: cover;
   background-position: top left;
 }
@@ -1776,4 +1781,7 @@ label:hover {
   .our_locations {
     display: none;
   }
+}
+.callButton{
+  border: 2px solid black;
 }
