@@ -1200,7 +1200,7 @@ a.current_dot {
 .img-show span {
   position: absolute;
   top: 0px;
-  right: 20px;
+  right: -1px;
   z-index: 99;
   cursor: pointer;
   background-color: red;
