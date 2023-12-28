@@ -14,180 +14,12 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <style>
-    .workspace {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        flex-direction: row;
-    }
-
-    .workspace .card {
-        display: flex;
-        height: 530px;
-        width: 300px;
-        background-color: #f4f4f4;
-        border-radius: 10px;
-        box-shadow: -1rem 0 3rem #00000024;
-        /*   margin-left: -50px; */
-        transition: 0.4s ease-out;
-        position: relative;
-        left: 0px;
-        margin: 15px 0px;
-    }
-
-    .workspace .card img {
-        height: 200px;
-    }
-
-    .workspace .card:not(:first-child) {
-        margin-left: -50px;
-    }
-
-    .workspace.card:hover {
-        transform: translateY(-20px);
-        transition: 0.4s ease-out;
-    }
-
-    .workspace .card:hover~.card {
-        position: relative;
-        left: 50px;
-        transition: 0.4s ease-out;
-    }
-
-    .workspace .card .unic {
-        margin-top: 12px;
-    }
-
-    .workspace .card .title {
-        color: rgb(0, 0, 0);
-        font-weight: 500;
-
-        font-size: 19px;
-        text-align: left;
-        margin-left: 20px;
-        /* position: absolute; */
-        /* left: 20px;
-        top: 210px; */
-    }
-
-    .workspace .card .bar {
-        position: absolute;
-        top: 247px;
-        left: 20px;
-        height: 3px;
-        width: 150px;
-    }
-
-    .emptybar {
-        background-color: #2e3033;
-        width: 100%;
-        height: 100%;
-    }
-
-    .filledbar {
-        position: absolute;
-        top: 0px;
-        z-index: 3;
-        width: 0px;
-        height: 100%;
-        background: rgb(0, 154, 217);
-        background: linear-gradient(90deg, rgba(0, 154, 217, 1) 0%, rgb(0, 129, 193) 65%, rgb(0, 126, 165) 100%);
-        transition: 0.6s ease-out;
-    }
-
-    .workspace .card:hover .filledbar {
-        width: 120px;
-        transition: 0.4s ease-out;
-    }
-
-    .workspace .circle {
-        position: absolute;
-        margin-left: -23%;
-        width: 95%;
-        top: 265px;
-        left: calc(50% - 60px);
-    }
-
-    .workspace .circle ul {
-        padding-left: 1rem;
-        font-size: 14px;
-        margin-bottom: 0;
-    }
-
-    .stroke {
-        stroke: rgb(0, 158, 194);
-        stroke-dasharray: 360;
-        stroke-dashoffset: 360;
-        transition: 0.6s ease-out;
-    }
-
-    svg {
-        fill: #17141d;
-        stroke-width: 2px;
-        width: 100%;
-    }
-
-    .workspace .card:hover .stroke {
-        stroke-dashoffset: 100;
-        transition: 0.6s ease-out;
-    }
-
-    .card button {
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-        width: 92%;
-        background-color: transparent;
-        border: 1px solid #0087c4;
-        padding: 3px 15px;
-
-        background-color: #0086c451;
-        transition: .4s;
-    }
-
-    .card button:hover {
-        background-color: transparent;
-        border: 1px solid #0087c4;
-        padding: 3px 15px;
-        color: white;
-
-        background-color: #0086c4;
-        transition: .4s;
-
-    }
-
-    @media (max-width: 1000px) {
-        .workspace {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            margin: auto;
-            align-items: center;
-            width: 100%;
-        }
-
-        .workspace .card:not(:first-child) {
-            margin-left: 0px;
-        }
-
-        .workspace.card:hover {
-            transform: translateY(0px);
-            transition: 0.4s ease-out;
-        }
-
-        .workspace .card:hover~.card {
-            position: relative;
-            left: 0px;
-            transition: 0.4s ease-out;
-        }
-
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap');
 
     #header {
         width: 100%;
@@ -219,23 +51,118 @@
     #header h1 span {
         font-size: 2rem;
         background-color: rgba(210, 210, 210, 0.344);
-        padding: 0px 10px;
-        /* border: 2px solid #0087c4; */
-        /* margin: 10px 0; */
-        line-height: -1px;
+        padding: 6px 10px;
+        border: 2px solid #0087c4;
     }
 
 
     #header .animated {
         animation-duration: 1.3s;
         animation-delay: .5s;
-
     }
 
 
     #header img {
         object-fit: cover;
         height: 100%;
+    }
+
+    .FAQ {
+        padding: 0 10%;
+    }
+
+    .FAQ .wrapper {
+        width: 100%;
+    }
+
+    .FAQ h1 {
+        margin-bottom: 20px;
+    }
+
+    .FAQ .container {
+        background-color: white;
+        color: black;
+        border-radius: 20px;
+        box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.25);
+        margin: 20px 0;
+    }
+
+    .FAQ .question {
+        font-size: 1.1rem;
+        font-weight: 600;
+        padding: 20px 80px 20px 20px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .FAQ .question::after {
+        content: "\002B";
+        font-size: 2.2rem;
+        position: absolute;
+        right: 20px;
+        transition: 0.2s;
+    }
+
+    .FAQ .question.active::after {
+        transform: rotate(45deg);
+    }
+
+    .FAQ .answercont {
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .FAQ .answer {
+        padding: 0 20px 20px;
+        line-height: 1.5rem;
+    }
+
+    /* .FAQ .question.active+.answercont {} */
+
+    @media screen and (max-width: 790px) {
+
+        .FAQ .wrapper {
+            width: 100%;
+        }
+
+        .FAQ {
+            padding: 0 2%;
+        }
+    }
+
+    .blog .carousel-control-prev,
+    .blog .carousel-control-next {
+        position: absolute;
+        top: 25%;
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 15%;
+        height: 15%;
+        color: #fff;
+        text-align: center;
+        opacity: 22.5;
+    }
+
+    .blog a {
+
+        text-decoration: none;
+        color: #0087c4;
+        padding: 5px 10px;
+        background-color: white;
+        border: none;
+
     }
 
     .footer-widget-heading .col-xl-6 button {
@@ -313,25 +240,14 @@
         transition: .4s;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     }
-
-    #amenities_carousal_btn .carousel-control-prev,
-    #amenities_carousal_btn .carousel-control-next {
-        font-size: 10px;
-        background-color: #0086c4;
-        height: 40px;
-        width: 50px;
-        border-radius: 2px;
-        align-items: center;
-
-        margin: auto;
-    }
 </style>
 
 <body>
     <div class="preloader">
-        <img src="./images/logo.JPG" alt="bsquare-loader-logo">
+        <img src="./images/logo.JPG" alt="Preloader Image">
     </div>
     <header>
+
         <nav class="navbar navbar-expand-lg navbar-fixed-top py-0" aria-label="Offcanvas navbar large">
             <div class="container-fluid" id="nav_container">
                 <div class="container main_nav_container justify-content-center">
@@ -346,8 +262,7 @@
                     <div class="offcanvas offcanvas-end text-bg-light m-auto" tabindex="-1" id="offcanvasNavbar2"
                         aria-labelledby="offcanvasNavbar2Label">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbar2Label"><img src="./images/logo2.png"
-                                    alt="bsquare-logo">
+                            <h5 class="offcanvas-title" id="offcanvasNavbar2Label"><img src="./images/logo2.png" alt="bsquare-logo">
                             </h5>
                             <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
@@ -387,6 +302,7 @@
                                 <li class="nav-item" style="display: flex; align-items: center;">
                                     <a class="nav-link" href="tel:+91 9925122772">+91&nbsp;9925122772</a>
                                 </li>
+
                             </ul>
 
                         </div>
@@ -394,18 +310,16 @@
                 </div>
             </div>
         </nav>
+
     </header>
-
-
     <div id="header">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./images/backposters/aminitiesPoster.png" class="d-block w-100"
-                        alt="amenities-img-bsquare">
+                    <img src="./images/backposters/b10.JPG" class="d-block w-100" alt="faq-img-bsquare">
                     <div class="title">
-                        <h1 class="animated slideInDown"><span>A workspace that has all the facilities and amenities
-                                necessary for your business</span></h1>
+                        <h1 class="animated slideInDown"><span>Frequently asked questions to solve all your queries
+                            </span></h1>
                         <h2 class="animated slideInLeft"></h2>
                     </div>
                 </div>
@@ -415,251 +329,261 @@
         </div>
     </div>
 
-    <main>
-        <div class="section_padding"></div>
-        <section>
-            <div>
-                <h2 class="heading_style">Facilities</h2>
-                <hr class="hr m-auto">
-                <p class="text-center mt-2">An established enterprise with all the important amenities to take your
-                    business ahead!</p>
-            </div>
+    <div class="container FAQ">
+        <div>
+            <h2 class="heading_style">FAQ</h2>
+            <hr class="hr m-auto">
 
-            <br><br>
-            <div class="container  workspace my-auto">
-                <div class="card" style="height: 550px;">
-                    <img src="./images/administrative-1.jpg" alt="bsquare-amenities-img">
-                    <h3 class="title">Adminstrative management Services</h3>
-                    <div class="bar">
-                        <div class="emptybar"></div>
-                        <div class="filledbar"></div>
-                    </div>
-                    <div class="circle text-start" style="width: 89%;">
-                        <ul>
-                            <li>Professional on-site administrative team</li>
-                            <li>Secretarial or administrative support</li>
-                            <li>Professional Services like CAs, Advocates, etc.</li>
-                            <li>Company Registration, Statutory Business Requirements</li>
-                        </ul>
+        </div>
 
-                    </div>
+        <div class="wrapper">
 
-                </div>
-                <div class="card" style="height: 550px;">
-                    <img src="./images/office-1.jpg" alt="bsquare-amenities-img">
-                    <h3 class="title unic">Office Support</h3>
-                    <div class="bar">
-                        <div class="emptybar"></div>
-                        <div class="filledbar"></div>
-                    </div>
-                    <div class="circle text-start" style="width: 89%;">
-                        <ul>
-                            <li>Document printing, scanning, photo-copying, FAX, high-speed Broadband Internet
-                                Connection with upgrade choices</li>
-                            <li>Telephone e-centrex system featuring conference calling, call transfer and direct-dial
-                                number</li>
-                            <li>High-specification digital telephone with speaker, call pickup, speed dial, hunt groups,
-                                caller-id and multiple-line capacity</li>
-                            <li>24/7 Building Security</li>
-                        </ul>
-
-
-                    </div>
-
-                </div>
-                <div class="card" style="height: 550px;">
-                    <img src="./images/reception.jpg" alt="bsquare-amenities-img">
-                    <h3 class="title unic">Reception & Concierge</h3>
-                    <div class="bar">
-                        <div class="emptybar"></div>
-                        <div class="filledbar"></div>
-                    </div>
-                    <div class="circle text-start" style="width: 89%;">
-                        <ul>
-                            <li>Welcoming Reception</li>
-                            <li>Meeting & Greeting your guests</li>
-                            <li>Guest Waiting Lounge and smaller break-out area</li>
-                            <li>Couriers & Postal Mail</li>
-                        </ul>
-
-                    </div>
-
-                </div>
-                <div class="card" style="height: 550px;">
-                    <img src="./images/facility.jpeg" alt="bsquare-amenities-img">
-                    <h3 class="title unic">Facilities Serve Hub</h3>
-                    <div class="bar">
-                        <div class="emptybar"></div>
-                        <div class="filledbar"></div>
-                    </div>
-                    <div class="circle text-start" style="width: 89%;">
-
-                        <ul>
-                            <li>Fully furnished establishment with sufficient storage space and air-conditioning</li>
-                            <li>Facility management – repair & maintenance of equipment, etc.</li>
-                        </ul>
-
-                    </div>
-
-                </div>
-                <div class="card" style="height: 550px;">
-                    <img src="./images/virtual.JPG" alt="bsquare-amenities-img">
-                    <h3 class="title unic">Business Meetings</h3>
-                    <div class="bar">
-                        <div class="emptybar"></div>
-                        <div class="filledbar"></div>
-                    </div>
-                    <div class="circle text-start" style="width: 89%;">
-
-                        <ul>
-                            <li>Meeting Room with state-of-the-art business equipment</li>
-                            <li>Catering for your Business Meetings</li>
-                        </ul>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-            <div class="container  workspace my-auto">
-                <div class="card">
-                    <img src="./images/refreshment1.jpg" alt="bsquare-amenities-img">
-                    <h3 class="title unic">Refreshments</h3>
-                    <div class="bar">
-                        <div class="emptybar"></div>
-                        <div class="filledbar"></div>
-                    </div>
-                    <div class="circle text-start">
-
-                        <ul>
-                            <li>Food & drinks at the cafe</li>
-                            <li>Lunch area for everyone</li>
-                        </ul>
-
-                    </div>
-
-                </div>
-                <div class="card">
-                    <img src="./images/meditation.jpg" alt="bsquare-amenities-img">
-                    <h3 class="title unic">Relaxation Zone</h3>
-                    <div class="bar">
-                        <div class="emptybar"></div>
-                        <div class="filledbar"></div>
-                    </div>
-                    <div class="circle text-start">
-                        <ul>
-                            <li>Calm and clean environment for relaxation</li>
-                            <li>Meditational zone filled with tranquility</li>
-                        </ul>
-
-                    </div>
-
-                </div>
-                <div class="card">
-                    <img src="./images/wifi.jpg" alt="bsquare-amenities-img">
-                    <h3 class="title unic">Free Wifi</h3>
-                    <div class="bar">
-                        <div class="emptybar"></div>
-                        <div class="filledbar"></div>
-                    </div>
-                    <div class="circle text-start">
-                        <ul>
-                            <li>All kinds of technological facilities</li>
-                            <li>Plug-n-play of printers, projectors and screens</li>
-                        </ul>
-
-
-                    </div>
-
-                </div>
-                <div class="card">
-                    <img src="./images/Housekeeping.jpg" alt="bsquare-amenities-img">
-                    <h3 class="title unic">House keeping</h3>
-                    <div class="bar">
-                        <div class="emptybar"></div>
-                        <div class="filledbar"></div>
-                    </div>
-                    <div class="circle text-start">
-                        <ul>
-                            <li>Cleanliness & hygiene for the whole business centre</li>
-                            <li>Stacking all the utilities in all restrooms regularly</li>
-                        </ul>
-
-                    </div>
-
-                </div>
-
-
-
-            </div><br><br>
-
-        </section>
-
-        <section class="locations">
-            <div class="section_padding"></div>
             <div class="container">
-                <div>
-                    <h2 class="heading_style ">A Showcase of Our Spaces</h2>
-                    <hr class="hr m-auto">
-                    <p class="text-center mt-2">Check Out Images Of Conference Rooms, Reception, Lobby,
-                        Pantry and waiting Room.</p>
+                <div class="question">
+                    What is BSQUARE Coworking Space? How is it different from a traditional office?
                 </div>
-                <br><br>
-                <div class="container">
-                    <div class="row justify-content-center ">
-                        <div class="col-xl-6 col-md-6 col-sm-12 bg-white p-0 d-flex align-items-center">
-                            <div class="container ">
-                                <h5><span style="color: #0087c4;">Conference Rooms</span> <br>
-                                    Fully Equipped Conference Rooms</h5>
-                                <br>
-                                <p>
-                                    Our conference rooms are equipped with the latest A/V conferencing technology and
-                                    always ready for your next meeting! If you are our physical tenant, you will never
-                                    be charged for conference room use.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-md-6 col-sm-12 p-0 bg-white text-center" id="amenities_carousal_btn">
-                            <div id="carouselExampleInterval" class="carousel slide carousal_button"
-                                data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active" data-bs-interval="10000">
-                                        <img src="./images/facilities/1.webp" class="d-block w-100"
-                                            alt="bsquare-conference-rooms">
-                                    </div>
-                                    <div class="carousel-item" data-bs-interval="2000">
-                                        <img src="./images/facilities/2.webp" class="d-block w-100"
-                                            alt="bsquare-conference-rooms">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./images/facilities/3.webp" class="d-block w-100"
-                                            alt="bsquare-conference-rooms">
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button"
-                                    data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button"
-                                    data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                        </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p> BSQUARE Coworking Space is a fully-furnished, serviced, co-working and office space
+                            conveniently
+                            located at a prestigious business location. With BSQUARE Coworking Space you get a complete,
+                            professional office environment that will be available to you whenever you want. You can
+                            book
+                            the different office spaces that are cost-effective and as per your requirement. You’ll also
+                            get
+                            professional receptionists, state-of-the-art telephone and IT services, pantry visitors and
+                            a
+                            lounge area.</p>
+                        <br>
+                        <p>With traditional offices, you have to go through lot of hassles. Before you can be
+                            productive,
+                            you must:</p>
+
+                        <ul>
+                            <li>Pay brokerage for office space</li>
+                            <li> Sign a fixed-length office lease</li>
+                            <li> Provide office furniture & fixtures</li>
+                            <li>Contract with multiple service providers (phone, Internet, maintenance)</li>
+                            <li>Hire an office support staff</li>
+                            <li>Buy office equipment</li>
+                            <li>Spend time, resources and money</li>
+                            <li>Hire an office support staff</li>
+                        </ul>
+                        <p>With BSQUARE Coworking Space, your office space solutions are a single phone call or mouse
+                            click
+                            away. Simply select your office and start working? and leave the rest to us.</p>
                     </div>
-
-
                 </div>
             </div>
-        </section>
-        <div class="section_padding"></div>
 
-        <a id="button"></a>
+            <div class="container">
+                <div class="question">
+                    What type of terms and conditions come with BSQUARE Coworking Space?
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>We have flexible Rent/Lease options. You can get an office for one day, one year or more. For
+                            long term office space requirements, we have a very simple lease agreement for executive
+                            office space. And with our professional executive office staff you have on-demand access to
+                            administrative support and office equipment without hiring a permanent staff or making a
+                            capital investment.</p>
+                    </div>
+                </div>
+            </div>
 
-    </main> <br><br>
+            <div class="container">
+                <div class="question">
+                    Why book a BSQUARE Meeting Room?
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>The BSQUARE meeting room is conveniently located in prime office building near major
+                            corporate houses. Your meeting room, board room, or conference room delivers a professional
+                            atmosphere equipped with high-speed Internet service, LCD Screen, Projector, Laptop, etc.
+                            Our professional meeting room staff has the skills to accommodate your needs of business
+                            presentation. Photocopiers, printing, facsimile and binding services are also available for
+                            our meeting room clients. In short, we have all theaccommodations to make your meeting a
+                            success.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="question">
+                    How do I benefit from your coworking space?
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>No headache of Electricity Bill, Reception Support, Office Boy Support, Housekeeping,
+                            Cleaning, Office Maintenance, Plumbing, AMC Taxes, Telephone, Internet Broadband Connection,
+                            Photocopying, Printing, Scanning, High-configuration Computer, Furniture, Air-conditioning,
+                            Meeting/Conference Room, Guests-waiting lounge, Tea/Coffee, MineralWater, etc. In addition,
+                            there is heavy energy cost in managing office operations which cannot be measured in terms
+                            of money. BSQUARE will manage all your business needsand handle your burden of day-to-day
+                            office management, leaving you free to focus on your core business. The complete Office
+                            Package is offered at the cost of your services only and there is no office space rent cost.
+                            <br><br>
+                            <b>Switching to BSQUARE Coworking Space will definitely reduce your monthly bill by more
+                                than
+                                30%, thereby increasing your productivity.</b>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="question">
+                    What if my office requires change in the future?
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>No problem. Since each Coworking Space typically has between 100 and 400 work stations, we
+                            can accommodate your changing office space needs with ease. You are locked into a lease
+                            agreement when you rent a traditional office, but at BSQUARE Coworking Space you can expand
+                            or shrink the size of your office space as your needs change. You only pay for the office
+                            space you need.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="question">
+                    Why should you switch to BSQUARE Meeting Rooms?
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>BSQUARE meeting rooms are the solution for low-cost and flexible meeting spaces. We can
+                            accommodate any meeting rooms as per your need, from standard meeting rooms to conference
+                            rooms and board rooms. The BSQUARE meeting room support staff is available on demand to
+                            handle specific requests. With a BSQUARE meeting room you get a professional workspace,
+                            allowing your meetings to be more productive.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="question">
+                    Do I need to supply my own office equipment?
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>No. All BSQUARE Coworking Space come equipped with everything you need. We have contemporary
+                            office furniture, high-speed Internet connectivity, fully staffed reception areas, waiting
+                            lounge and state-of-the-art meeting/conference room and pantry. Best of all you can expect
+                            the same high-quality office services. When you rent/lease a traditional office, you must
+                            outfit the entire office to your specifications at your own expense, which can take weeks or
+                            even months. With BSQUARE Coworking Space you can start your business immediately.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="question">
+                    When I can I get started in my new office?
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>Our Coworking Space can be configured to your specifications and ready in no time. You can
+                            sign your BSQUARE office agreement on one day and start working in your new office the next.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="question">
+                    How will my business get visibility in BSQUARE Coworking Space?
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>When you want a visible presence, a BSQUARE Coworking Space delivers. Our Coworking Space is
+                            located at a prime location in the heart of the city. We’re pleased to offer internal
+                            branding within our Coworking Space, allowing you to display your companylogo with your
+                            office. Simply provide us with your logo and we’ll do the rest. So, in addition to all the
+                            benefits of working in a BSQUARE Coworking Space, your office will present a seamless yet
+                            individual image. Contact us for details.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="question">
+                    What kind of experience will I have at a BSQUARE Meeting Room?
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>A BSQUARE meeting room will allow you and your guests to focus on your work. And since our
+                            staff supports our meeting rooms, you will have no outside distractions. Your attendees will
+                            be greeted by our professional team in our spacious reception areas and shown to your
+                            assigned meeting room. BSQUARE meeting rooms are available in different styles, including
+                            training rooms, conference rooms, interview rooms and board room layouts.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="question">
+                    Is catering available at my meeting room?
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>Yes, whether you choose a standard meeting room, conference room or board room, catering is
+                            available as an additional pay-as-you-use service. We’ll manage the ordering and delivery to
+                            your meeting room so you can focus on your meeting.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="question">
+                    Any other Coworking Space amenities available at my meeting room?
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>No. All BSQUARE Coworking Space come equipped with everything you need. We have contemporary
+                            office furniture, high-speed Internet connectivity, fully staffed reception areas, waiting
+                            lounge and state-of-the-art meeting/conference room and pantry. Best of all you can expect
+                            the same high-quality office services. When you rent/lease a traditional office, you must
+                            outfit the entire office to your specifications at your own expense, which can take weeks or
+                            even months. With BSQUARE Coworking Space you can start your business immediately.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="question">
+                    Can I be reached during my meeting?
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>A BSQUARE meeting room allows you to focus. If you expect to be contacted please instruct
+                            your meeting room receptionist how you would like your calls to be handled. Our
+                            receptionists will handle your messages or forward calls to your meeting, conference room
+                            according to your instructions. This means that you can receive calls in your meeting room
+                            or have them held until a time that is convenient for you.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="question">
+                    Is your meeting room pricing competitive?
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>Yes. BSQUARE meeting rooms feature standard pricing with optional amenities available. Our
+                            meeting room pricing is both flexible and easy to understand.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="question">
+                    Is there a benefit in being a frequent BSQUARE meeting room customer?
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>Everyone can benefit from a BSQUARE meeting room. If you are a frequent customer you will
+                            definitely get huge discounts on our package.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <a id="button"></a>
     <a href="https://wa.me/9925122772?text=Hello!%0A%0AThis is [Your Name].%0AI'd like to inquire about [Your Inquiry].%0A%0APlease respond."
         class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
@@ -810,7 +734,7 @@
                             </div>
                             <ul class="p-0">
                                 <li><a href="./index.html">Home</a></li>
-                                <li><a href="./Blogs.html">Blogs</a></li>
+                                <li><a href="./blogs.html">Blogs</a></li>
 
                                 <li><a href="./facilities.html">Facilities</a></li>
                                 <li><a href="./careers.html">Careers</a></li>
@@ -867,6 +791,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+
     <script>
         $(document).ready(function () {
             // Simulate a delay (2 seconds in this case)
@@ -891,6 +816,27 @@
             e.preventDefault();
             $('html, body').animate({ scrollTop: 0 }, '300');
         });
+        var cardsModule = (function () {
+            var trigger = $(".item"),
+                closetrigger = $(".item span.close");
+
+            var animateCard = function () {
+                $(this).addClass("animate");
+            };
+
+            var closeCard = function (e) {
+                console.log($(this)
+                    .parent())
+                $(this)
+                    .parent()
+                    .removeClass("animate");
+                e.stopPropagation();
+            };
+
+            trigger.on("click", animateCard);
+            closetrigger.on("click", closeCard);
+        })();
+
         const $dropdown = $(".dropdown");
         const $dropdownToggle = $(".dropdown-toggle");
         const $dropdownMenu = $(".dropdown-menu");
@@ -916,27 +862,27 @@
                 $dropdown.off("mouseenter mouseleave");
             }
         });
-        const counters = document.querySelectorAll('.value');
-        const speed = 500;
 
-        counters.forEach(counter => {
-            const animate = () => {
-                const value = +counter.getAttribute('akhi');
-                const data = +counter.innerText;
 
-                const time = value / speed;
-                if (data < value) {
-                    counter.innerText = Math.ceil(data + time);
-                    setTimeout(animate, 1);
-                } else {
-                    counter.innerText = value;
+
+        let question = document.querySelectorAll(".question");
+
+        question.forEach(question => {
+            question.addEventListener("click", event => {
+                const active = document.querySelector(".question.active");
+                if (active && active !== question) {
+                    active.classList.toggle("active");
+                    active.nextElementSibling.style.maxHeight = 0;
                 }
-
-            }
-
-            animate();
-        });
-
+                question.classList.toggle("active");
+                const answer = question.nextElementSibling;
+                if (question.classList.contains("active")) {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                } else {
+                    answer.style.maxHeight = 0;
+                }
+            })
+        })
 
 
     </script>
