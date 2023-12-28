@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Co-working spaces | bsquare</title>
+    <title>co-working spaces | bsquare</title>
     <meta name="keywords" content="co-working spaces, shade offices, flexible workspaces, co-working spaces Ahmedabad">
     <meta name="description" content="Discover the best co-working spaces in Ahmedabad, flexible office for business">
     <link rel="icon" href="./images/favicon.png" type="image/png">
@@ -148,6 +148,9 @@
 </style>
 
 <body>
+    <div class="preloader">
+        <img src="./images/logo.JPG" alt="bsquare-loader-logo">
+    </div>
     <header>
         <nav class="navbar navbar-expand-lg navbar-fixed-top py-0" aria-label="Offcanvas navbar large">
             <div class="container-fluid" id="nav_container">
@@ -550,6 +553,15 @@
         crossorigin="anonymous"></script>
 
     <script>
+          $(document).ready(function () {
+            // Simulate a delay (2 seconds in this case)
+            setTimeout(function () {
+                const preloader = $(".preloader");
+                preloader.fadeOut(200); // Fade out the preloader
+                const content = $(".content");
+                content.removeClass("hidden"); // Show the website content
+            }, 1500); // 2 seconds in milliseconds (2000 ms)
+        });
         var btn = $('#button');
 
         $(window).scroll(function () {
