@@ -183,8 +183,7 @@ p {
   height: 225px;
   padding: 25px 15px;
   margin: 0 auto;
-  /* border-radius: 50%; */
-  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); */
+ 
   position: relative;
   z-index: 1;
   transition: 0.3s;
@@ -256,12 +255,6 @@ p {
 
 /* ------------------------------workspace section End ---------------------*/
 
-/* #back {
-  background-image: url("./images/back-designs.jpg");
-  width: 100%;
-  background-attachment: fixed;
-  background-size: cover;
-} */
 
 #Workspce_cards .workspace_card {
   border-top: 5px solid #0072a7;
@@ -716,10 +709,7 @@ button {
   transition: 0.5s;
 }
 
-/* em{
-    font-style:normal;
-    color:var(--primary_lite);
-} */
+
 
 #slider a,
 p,
@@ -917,19 +907,6 @@ ul {
   background-position: top left;
 }
 
-/* .slider li:before{
-    content:"";
-    position:absolute;
-    top:-20px;
-    right:0;
-    width:250px;
-    height:250px;
-    background-image:url("../public/images/home\ banner_clip.png");
-    background-size:100% 100%;
-    transition-delay: 1s;
-    transform: rotate(-90deg);
-    z-index:1;
-} */
 
 .slider li:after {
   content: "";
@@ -1207,10 +1184,6 @@ a.current_dot {
   padding: 5px 20px;
 }
 
-/* .img-show img {
-    max-width: 100%;
-    max-height: 100%;
-} */
 
 /* Media query for screens smaller than 768px (adjust as needed) */
 @media (max-width: 768px) {
@@ -1784,4 +1757,300 @@ label:hover {
 }
 .callButton{
   border: 2px solid black;
+}
+
+
+#mainBanner{
+  margin-top: 3rem;
+}
+#mainBanner hr.border-light {
+  max-width: 300px;
+  opacity: 0.9;
+}
+
+#mainBanner .carousel-item {
+  transition: transform 1s ease-in-out;
+}
+
+#mainBanner .carousel-caption {
+  top: 48%;
+  transform: translate(0, -50%);
+  bottom: auto;
+  left: 4px;
+  right: 0;
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  text-align: left;
+}
+
+#mainBanner .carousel-item.active .carousel-caption {
+  animation: widthSlide 3.5s 1;
+  opacity: 1;
+  z-index: 999;
+  width: 100%;
+}
+
+@keyframes widthSlide {
+  0% {
+      width: 0%;
+      opacity: 0;
+  }
+
+  50% {
+      width: 100%;
+      opacity: 1;
+  }
+
+  100% {
+      width: 100%;
+      opacity: 1;
+  }
+}
+
+#mainBanner .carousel-caption h5 {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  /* -webkit-text-stroke: 1px #E2FADB; */
+  color: #fffffffa;
+  position: relative;
+  width: fit-content;
+  padding-right: 5px;
+}
+#mainBanner .carousel-caption h5 span {
+  font-size: 0.6em;
+  text-transform: uppercase;
+  font-weight: 600;
+  /* -webkit-text-stroke: 1px #E2FADB; */
+  color: #fffffffa;
+  position: relative;
+  width: fit-content;
+  padding-right: 5px;
+}
+
+#mainBanner .carousel-caption h5:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  bottom: -20px;
+  opacity: 1;
+}
+
+#mainBanner .carousel-item.active .carousel-caption h5:after {
+  width: 10%;
+  height: 4px;
+  animation: titleCover 6s 1;
+  opacity: 0;
+}
+
+@keyframes titleCover {
+  0% {
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+  }
+
+  20% {
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+  }
+
+  30% {
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+  }
+
+  55% {
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 5px;
+      opacity: 1;
+  }
+
+  95% {
+      left: 0;
+      right: 0;
+      width: 10%;
+  }
+
+  100% {
+      left: 0;
+      right: 0;
+      width: 10%;
+      opacity: 0.5;
+  }
+}
+
+#mainBanner .carousel-item>img {
+  height: 100vh;
+  object-fit: cover;
+  transform: scale(1);
+}
+
+#mainBanner .carousel-item.active>img {
+  transform: scale(4);
+  animation: bgScale 200s 1;
+}
+
+@keyframes bgScale {
+  0% {
+      transform: scale(1);
+  }
+
+  100% {
+      transform: scale(4);
+  }
+}
+
+#mainBanner .carousel-item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(0 0 0 / 40%);
+  z-index: 99;
+}
+
+#mainBanner .carousel-caption p {
+  font-size: 1.35em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#mainBanner .carousel-caption * {
+  white-space: nowrap;
+}
+
+
+
+
+@media screen and (max-width: 991px) {
+  #mainBanner .carousel-caption h5 {
+      font-size: 3.5em;
+  }
+
+  #mainBanner .carousel-caption p {
+      font-size: 1em;
+      font-weight: 900;
+      text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #mainBanner .carousel-caption h5 {
+      font-size: 3.5em;
+  }
+
+  #mainBanner .carousel-caption p {
+      font-size: 1em;
+      font-weight: 600;
+  }
+
+  #mainBanner .carousel-item img {
+      height: 80vh;
+  }
+
+  #mainBanner .mian-logo>span {
+      font-size: 1em;
+  }
+
+  #mainBanner .carousel-indicators {
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 0;
+      margin-right: 15%;
+      margin-bottom: 1rem;
+      margin-left: 15%;
+      flex-wrap: nowrap;
+      top: auto;
+      transform: unset;
+      width: auto;
+      gap: 5px;
+  }
+
+  #mainBanner .carousel-indicators [data-bs-target] {
+      width: 12px;
+      height: 12px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #mainBanner .carousel-caption h5 {
+      font-size: 2em;
+  }
+
+  .carousel-item img {
+      height: 60vh;
+  }
+
+  #mainBanner .carousel-caption p {
+      font-size: 0.75em;
+  }
+
+  #mainBanner .carousel-caption {
+      width: 100%;
+      opacity: 0;
+  }
+
+  #mainBanner .carousel-item.active .carousel-caption {
+      animation: sample 2.5s 1;
+      opacity: 1;
+  }
+
+  #mainBanner .carousel-caption * {
+      white-space: unset;
+  }
+
+  @keyframes sample {
+      0% {
+          opacity: 0;
+      }
+
+      50% {
+          opacity: 1;
+      }
+
+      100% {
+          opacity: 1;
+      }
+  }
+
+  /* .carousel-caption h5 {
+          -webkit-text-stroke: 1px #E2FADB;
+      } */
+
+  #mainBanner hr.border-light {
+      max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #mainBanner .carousel-caption h5 {
+      font-size: 1.45em;
+  }
+
+  #mainBanner .carousel-caption p {
+      font-size: 0.7em;
+  }
+
+  #mainBanner .carousel-item img {
+      height: 50vh;
+  }
 }
